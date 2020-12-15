@@ -1,0 +1,7 @@
+   <h1><%= @cocktail.name %></h1>
+      <p>Your recipe</p>
+
+      <%= simple_form_for [ @cocktail, @dose ] do |f| %>
+        <%= f.input :description %>
+        <%= f.submit "Submit recipe", class: "btn btn-primary" %>
+      <% end %>
